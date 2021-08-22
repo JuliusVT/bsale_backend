@@ -17,7 +17,9 @@
 Para ejecutar el proyecto en entorno local usaremos `npm run dev`
 ## Ejecucion en producción
 Para ejecutar el proyecto en producción usaremos `npm run start`
-
+## Enlaces app
+[APP](https://frontend-bsale-julius.netlify.app/)
+[Enlace Repositorio](https://github.com/JuliusVT/bsale_frontend)
 ## Enlaces rutas de la API
 [Ruta inicial](https://backend-bsale-julius.herokuapp.com/)
 
