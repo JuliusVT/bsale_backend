@@ -19,6 +19,7 @@ Para ejecutar el proyecto en entorno local usaremos `npm run dev`
 Para ejecutar el proyecto en producción usaremos `npm run start`
 ## Enlaces app
 [APP](https://frontend-bsale-julius.netlify.app/)
+
 [Enlace Repositorio](https://github.com/JuliusVT/bsale_frontend)
 ## Enlaces rutas de la API
 [Ruta inicial](https://backend-bsale-julius.herokuapp.com/)
@@ -36,11 +37,11 @@ Esta API consta de 2 endpoins:
 
 1. Endpoin cumple función de traer todos los productos, este endpoin recibe parametros.
   - page: indica el número de pagina
-  - category: buscara productos relacionados con la categoria a buscar
+  - category: buscara productos relacionados con la categoria filtrada
   - order: busca los productos por los siguiente filtros
     - alfabético (ascendente y descendente)
     - precios (mayor y menor)
   - search : busca los productos por nombre
 2. Endpoin cumple la función de traer todas las categorias
 
-Adicionalmente este ejercicio cuanta con paginacion de productos y filtro de productos por ordenamiento y categorias
+Adicionalmente este ejercicio cuenta con paginación de productos y filtro de productos por ordenamiento y categorias
