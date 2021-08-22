@@ -9,7 +9,7 @@
 - nose.js
 - Express: Framework node.js
 - Morgan: Monitoreo de consultas realizadas por el cliente
-- Nodemon: Monitoreo de cambios en el codigo y renicio automático de la aplicación (esto solo funciona en el entorno de desarrollo)
+- Nodemon: Monitoreo de cambios en el codigo y reinicio  automático de la aplicación (esto solo funciona en el entorno de desarrollo)
 - Mysql: Driver para conexión
 - Express-myconnection: Modulo de express para interactuar con las conexiones y consultas de mysql
 
