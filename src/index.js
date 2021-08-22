@@ -4,7 +4,7 @@ const morgan = require('morgan');
 const mysql = require('mysql');
 const myconn = require('express-myconnection');
 const cors = require('cors');
-const { dbOptionDev } = require('./config/database');
+const { dbOption } = require('./config/database');
 
 // settings
 app.set('port', process.env.PORT || 3000);
@@ -16,7 +16,7 @@ app.use(cors());
 app.use(morgan('dev'));
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
-app.use(myconn(mysql, dbOptionDev, 'single'));
+app.use(myconn(mysql, dbOption, 'single'));
 
 // routes
 app.get('/', (req, res) => {
