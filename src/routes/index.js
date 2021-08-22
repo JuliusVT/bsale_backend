@@ -2,10 +2,11 @@ const {RESPONSE,queryPromise}  = require ('../utils/responses')
 const { Router } = require('express');
 const router = Router();
 const { ORDER_NAME_ASC, ORDER_NAME_DESC, ORDER_PRICE_DESC, ORDER_PRICE_ASC} = require('../utils/constants')
+
+//route get products
 router.get('/products', (req, res) => {
     req.getConnection( async (err, connection) => {
-        if(err) return res.status(500).json({error: 'There was an error'});
-       
+        if(err) return res.status(500).json({code:500,error: 'Server: There was an error'});
         let query = 'SELECT * FROM product';
         let subquery = 'SELECT COUNT(id) as total_items FROM product'; 
         if(req.query.search){
@@ -49,9 +50,10 @@ router.get('/products', (req, res) => {
     });
 });
 
+//route get categories
 router.get('/categories', (req, res) => {
     req.getConnection( async (err, connection) => {
-        if(err) return res.status(500).json({error: 'There was an error'});
+        if(err) return res.status(500).json({error: 'Server: There was an error'});
         let query = 'SELECT * FROM category';
         let results = await queryPromise(connection,query)
         RESPONSE.categories.code = '200'

@@ -3,7 +3,7 @@ const RESPONSE = {
     categories:{}
 };
 
-let queryPromise = function(connection, sql, values ) {
+const queryPromise = (connection, sql, values ) => {
  return new Promise(( resolve, reject ) => {
     connection.query(sql, values, ( err, rows) => {
         if ( err ) {

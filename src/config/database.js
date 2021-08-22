@@ -5,11 +5,4 @@ const dbOption = {
     password: 'bsale_test',
     database: 'bsale_test',
 }
-const dbOptionDev = {
-    host: 'localhost',
-    port: 3306,
-    user: 'root',
-    password: 'root',
-    database: 'bsale_test',
-}
-module.exports = {dbOptionDev , dbOption};
+module.exports = dbOption;
