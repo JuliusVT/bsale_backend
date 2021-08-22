@@ -8,10 +8,10 @@ const { dbOption } = require('./config/database');
 
 // settings
 app.set('port', process.env.PORT || 3000);
-app.use(cors());
-// app.use(cors({
-//     origin: ['http://localhost:3000/', 'http://localhost:3006/']
-// }));
+// app.use(cors());
+app.use(cors({
+    origin: ['https://elated-franklin-7bfe3b.netlify.app/']
+}));
 // middlewares
 app.use(morgan('dev'));
 app.use(express.urlencoded({extended: false}));
